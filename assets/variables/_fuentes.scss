@@ -1,0 +1,59 @@
+$fuentes: (
+  "campton-thin"        : "Campton-Thin",
+  "campton-extralight"  : "Campton-ExtraLight",
+  "campton-light"       : "Campton-light",
+  "campton-book"        : "Campton-book",
+  "campton-medium"      : "Campton-medium",
+  "campton-semibold"    : "Campton-SemiBold",
+  "campton-bold"        : "Campton-Bold",
+  "campton-black"       : "Campton-Black",
+  "campton-extrabold"   : "Campton-ExtraBold",
+);
+
+$tamanio_fuente: (
+  "d1"    : 4rem, /* destacado 1 */
+  "d2"    : 3rem, /* destacado 2 */
+  "d3"    : 3.5rem, /* destacado 3 */
+  "c1"    : 3rem, /* cabecera 1 */
+  "c2"    : 2.5rem, /* cabecera 2 */
+  "c3"    : 2rem, /* cabecera 3 */
+  "p"     : 1.8rem, /* parrafo */
+  "cta"   : 2rem, /* call to action */
+);
+
+/*Font Family Campton*/
+@font-face {
+  font-family: "Campton-Thin";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Thin.ttf"); }
+
+@font-face {
+  font-family: "Campton-ExtraLight";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-ExtraLight.ttf"); }
+
+@font-face {
+  font-family: "Campton-light";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Light.ttf"); }
+
+@font-face {
+  font-family: "Campton-book";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Book.ttf"); }
+
+@font-face {
+  font-family: "Campton-medium";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Medium.ttf"); }
+
+@font-face {
+  font-family: "Campton-semibold";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-SemiBold.ttf"); }
+
+@font-face {
+  font-family: "Campton-bold";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Bold.ttf"); }
+
+@font-face {
+  font-family: "Campton-ExtraBold";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Campton-Black";
+  src: url("https://d1zjrnsze32g3g.cloudfront.net/fonts-globales/Campton-Black.ttf"); }

@@ -1,0 +1,22 @@
+{
+    "name": "APP-CLIMA",
+    "short_name": "APP-CLIMA",
+    "start_url": "/html/index.html",
+    "display": "standalone",
+    "background_color": "royalblue",
+    "theme_color": "royalblue",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/icons/weather.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "assets/icons/weather2.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

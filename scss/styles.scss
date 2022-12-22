@@ -1,0 +1,175 @@
+@import "../assets/variables/app.scss";
+
+html {
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background-color: map-get($map: $colores, $key: 'color_pagina');
+}
+
+.div__general{
+    position: relative;
+    @include flex(column, center, center);
+}
+
+.div__general__titulo{
+    width: auto;
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    top: 5rem;
+    @include fuente(map-get($map: $colores, $key: 'blanco'), 2.4rem, 'Campton-Bold');
+}
+
+.div__general__contenido{
+    width: 40%;
+    height: auto;
+    position: relative;
+    @include fuente(map-get($map: $colores, $key: 'blanco'), '', 'Campton-SemiBold');
+    padding: 1rem;
+    border: 2px solid map-get($map: $colores, $key: 'blanco');
+    top: 10rem;
+}
+
+.div__form{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.div__hoy{
+    width: auto;
+    height: auto;
+    @include flex('', '', space-between);
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+#formulario-texto{
+    @include flex('', center, '');
+    padding: 1rem;
+}
+
+#formulario-texto input{
+    width: auto;
+}
+
+#ciudad-escrita, #obtener-clima{
+    margin-right: 0.5rem;
+}
+
+#obtener-clima{
+    margin-top: 0.4rem;
+    @include boton;
+}
+
+hr{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#formulario-predefinido{
+    padding: 1rem;
+}
+
+.div__semana{
+    width: auto;
+    height: auto;
+    @include flex('', '', space-around);
+    padding: 1rem;
+}
+
+.div__hoy .contenido, .div__hoy .imagen__contenido{
+    height: auto;
+}
+
+.ocultar__imagen{
+    display: none;
+}
+
+.mostrar__imagen{
+    display: block;
+}
+
+.error{
+    display: none;
+    color: map-get($map: $colores, $key: 'rojo');
+    margin: auto;
+}
+
+/* VERSIÓN ORDENADOR GRANDE */
+@media (min-width: 1441px){
+    .div__general{
+        /* width: 40%; */
+    }
+}
+/* FIN VERSIÓN ORDENADOR GRANDE */
+
+/* VERSIÓN TABLET GRANDE HORIZONTAL */
+@media (min-width: 1366px) and (max-width: 1440px) and (orientation:landscape){
+
+    .div__general{
+        width: 30%;
+    }
+
+}
+/* FIN VERSIÓN TABLET GRANDE HORIZONTAL */
+
+/* VERSIÓN ORDENADOR PEQUEÑO */
+@media (min-width: 1280px) and (max-width: 1365px){
+    
+    .div__general{
+        width: 50%;
+    }
+
+}
+/* FIN VERSIÓN ORDENADOR PEQUEÑO */
+
+/* VERSION TABLET GRANDE VERTICAL */
+@media (min-width: 1024px) and (max-width: 1279px) and (orientation:portrait) {
+
+    .div__general{
+        width: 40%;
+    }
+
+}
+/* FIN VERSION TABLET GRANDE VERTICAL */
+
+/* VERSION TABLET PEQUEÑA HORIZONTAL */
+@media (min-width: 1024px) and (max-width: 1279px) and (orientation:landscape){
+
+    .div__general{
+        width: 40%;
+    }
+
+}
+/* FIN VERSION TABLET PEQUEÑA HORIZONTAL */
+
+/* VERSION TABLET PEQUEÑA VERTICAL */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .div__general{
+        width: 50%;
+    }
+    
+}
+/* FIN VERSION TABLET PEQUEÑA VERTICAL */
+
+/* VERSION MOVIL */
+@media (max-width: 767px) {
+
+    .div__general{
+        width: auto;
+    }
+
+
+}
+/* FIN VERSION MOVIL */

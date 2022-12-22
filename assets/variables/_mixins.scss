@@ -1,0 +1,21 @@
+/* Mixin para utilizar al seleccionar el texto
+   $color -> Seleccionado del archivo _colores.scss
+   $fuente -> Seleccionado del archivo _fuentes.scss -> Array fuente
+*/
+@mixin fuente($color, $tamanio, $fuente) {
+    color: $color;
+    font-size: $tamanio;
+    font-family: $fuente;
+}
+
+/* Mixin para utilizar al usar flex
+   $direction -> Si se quiere row / column
+   $align_items -> opcional
+   $justify_content -> opcional
+*/
+@mixin flex($direction, $align_items: "", $justify_content: "") {
+    display: flex;
+    flex-direction: $direction;
+    align-items: #{$align_items};
+    justify-content: #{$justify_content};
+}

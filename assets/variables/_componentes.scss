@@ -1,0 +1,33 @@
+@import "_colores.scss";
+@import "_fuentes.scss";
+@import "_mixins.scss";
+/* En este documento vamos a crear todos los componentes necesarios que se repiten en la web. Por ejemplo, los botones */
+
+/* El componente imprime un boton, con las medidas estandar (para todas las resoluciones)
+   El boton incluye el hover
+   Este componente se puede usar de dos formas:
+   1) poniendo -> @include boton; lo que utilizara los parametros por defecto del mixin
+   2) si quieres modificar cualquier propiedad -> @include boton ($color: grey);
+*/
+@mixin boton(
+    $background_color: map-get($map: $colores, $key: 'gris'),
+    $color: map-get($map: $colores, $key: 'negro'),
+    $padding: 0.5rem 2.72rem,
+    $border_radius: 0.2rem,
+    $background_color_hover: map-get($map: $colores, $key: 'negro'),
+    $color_hover: map-get($map: $colores, $key: 'gris'),
+    $border: 1.25px solid map-get($map: $colores, $key: 'negro'),
+    $font_family: map-get($map: $fuentes, $key: "campton-bold")
+) {
+    background-color: $background_color;
+    color: $color;
+    padding: $padding;
+    border: $border;
+    border-radius: $border_radius;
+    font-family: $font_family;
+    &:hover {
+        background-color: $background_color_hover;
+        color: $color_hover;
+        border: 1.25px solid map-get($map: $colores, $key: 'gris');
+    }
+}

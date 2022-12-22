@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="royalblue"/>
+    <meta name="description" content="App Clima">
+    <title>El Tiempo</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/icons/weather.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="/assets/icons/weather.png" sizes="96x96">
+    <script src="/js/pwa.js" defer></script>
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="div__general" id="div-general">
+
+        <div class="div__general__titulo">
+            <h1>APP CLIMA</h1>
+        </div>
+
+        <div class="div__general__contenido">
+
+            <div id="div-general-formulario">
+
+                <form id="formulario-texto" action="#" method="post">
+    
+                    <div>
+                        <input type="search" id="ciudad-escrita" placeholder="Escribe una ciudad"/>
+                        <input type="submit" id="obtener-clima" value="Obtener Clima"/>
+                    </div>
+    
+                    <div class="div__form">
+                        <input type="checkbox" id="guardar-ciudad"/>
+                        <label>Guardar Ciudad</label>
+                    </div>
+    
+                </form>
+    
+                <p class="error"></p>
+    
+                <hr>
+    
+                <form id="formulario-predefinido" action="#" method="post">
+    
+                    <select id="form-ciudad">
+                        <option disabled selected value="">--Selecciona una ciudad--</option>
+                    </select>
+    
+                </form>
+    
+            </div>
+    
+            <div class="div__hoy">
+                
+                <div class="contenido">
+                    <div id="temperatura-actual"></div>
+                    <div id="ciudad"></div>
+                    <div id="dia"></div>
+                    <div id="temperaturas"></div>
+                </div>
+    
+                <div class="imagen__contenido">
+                    <img id="codigo-imagen" class="ocultar__imagen" alt="Imagen del tiempo">
+                </div>
+    
+            </div>
+    
+            <hr>
+    
+            <div class="div__semana">
+    
+                <div id="dia-1" class="dias">
+                    <img class="ocultar__imagen" src="" alt="Imagen del tiempo">
+                    <div class="dia"></div>
+                    <div class="temperatura"></div>
+                </div>
+    
+                <div id="dia-2" class="dias">
+                    <img class="ocultar__imagen" src="" alt="Imagen del tiempo">
+                    <div class="dia"></div>
+                    <div class="temperatura"></div>
+                </div>
+    
+                <div id="dia-3" class="dias">
+                    <img class="ocultar__imagen" src="" alt="Imagen del tiempo">
+                    <div class="dia"></div>
+                    <div class="temperatura"></div>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
